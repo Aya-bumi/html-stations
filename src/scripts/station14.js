@@ -12,9 +12,10 @@ function getData() {
 function buildFullName(data) {
     // Station14の問題はこちらです。想定する答えをここを書いてください。
     // 氏名がわかるようにしつつ、半角スペースで繋いでください。
+    const full_name = data.family_name + ' ' + data.first_name;
     // またtest配列のそれぞれのオブジェクトに対して、full_nameのプロパティが追加されるように実装すること
-}
-
+    return {...data, full_name: full_name}
+    }
 // 出力が想定される答え
 // const test = [
 //     {id: 1, full_name: '大木 優', first_name: '優', family_name: '大木',affiliation: 'TechTrain', is_student: false},

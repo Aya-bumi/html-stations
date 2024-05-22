@@ -9,7 +9,7 @@ const returnThisData = function () {
 
 const object = {
   data: "object data",
-  func: returnThisData,
+  func: () => returnThisData(),
 };
 
 function getData() {
